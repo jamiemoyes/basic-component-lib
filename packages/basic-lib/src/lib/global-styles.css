@@ -1,0 +1,41 @@
+:root {
+	font-family: sans-serif;
+	--_light-font-colour: hsl(0, 0%, 20%);
+	--_light-border-colour: hsla(0, 0%, 68%, 0.5);
+	--_light-bg-colour: rgb(242, 242, 242);
+	--_light-bg-button-colour: white;
+	--_light_container-background: hsl(210deg 16% 93%);
+	--_dark-bg-button-colour: hsl(210 9% 31%);
+	--_dark-bg-colour: rgb(39, 39, 45);
+	--_dark-font-colour: hsl(210 5% 95%);
+	--_dark-border-colour: rgba(11, 13, 14, 0.194);
+	--_dark_container-background: hsl(210deg 10% 23%);
+	--border-colour: var(--_light-border-colour);
+	--font-colour: var(--_light-font-colour);
+	--bg-colour: var(--_light-bg-colour);
+	--button-bg-colour: var(--_light-bg-button-colour);
+	--accent-colour: rgb(146, 146, 255);
+	--accent-colour-focus: rgb(108, 108, 255);
+	--container-background: var(--_light_container-background);
+}
+
+
+a {
+	color: var(--accent-colour);
+}
+
+html,
+body {
+	background: var(--bg-colour);
+	color: var(--font-colour);
+}
+
+@media (prefers-color-scheme: dark) {
+	* {
+		--border-colour: var(--_dark-border-colour);
+		--font-colour: var(--_dark-font-colour);
+		--bg-colour: var(--_dark-bg-colour);
+		--button-bg-colour: var(--_dark-bg-button-colour);
+		--container-background: var(--_dark_container-background);
+	}
+}

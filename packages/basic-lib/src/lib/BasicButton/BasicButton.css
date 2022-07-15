@@ -1,0 +1,35 @@
+button {
+	cursor: pointer;
+	font-size: 1.2rem;
+	border-radius: 0.5ch;
+	background: var(--button-bg-colour);
+	font-weight: 600;
+	color: var(--font-colour);
+	padding-inline: 1.75ch;
+	padding-block: 0.75ch;
+	border: none;
+	box-shadow: 0 0 0 0.2ch var(--border-colour);
+	transition: 0.1s;
+	outline: solid 2px var(--accent-colour);
+	outline-offset: 0.4ch;
+}
+
+button:hover {
+	box-shadow: 0px 0px 0px 0.5ch var(--border-colour);
+	outline-offset: 0.8ch;
+}
+
+.primary {
+	background: var(--accent-colour);
+	outline: none;
+}
+
+.primary:hover {
+	background: var(--accent-colour-focus);
+}
+
+@media (prefers-color-scheme: dark) {
+	button {
+		box-shadow: none;
+	}
+}

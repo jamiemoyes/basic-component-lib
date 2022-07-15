@@ -1,0 +1,43 @@
+:where(input[type="text"], input[type="password"]) {
+	padding-inline: 1.75ch;
+	padding-block: 0.75ch;
+	border-radius: 0.5ch;
+	font-size: 1.2rem;
+	border: none;
+	transition: 0.1s;
+	accent-color: var(--accent-colour);
+}
+
+:where(input[type="text"], input[type="password"]):hover {
+	outline: solid 0.2ch var(--accent-colour);
+	outline-offset: 0.5ch;
+}
+
+:where(input[type="text"], input[type="password"]) :focus {
+	outline: solid 0.2ch var(--accent-colour);
+	outline-offset: 0.1ch;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	font-size: 1.2rem;
+	border-radius: 0.5ch;
+	font-weight: 600;
+	color: var(--font-colour);
+	padding-inline: 1.75ch;
+	padding-block: 0.75ch;
+	border: none;
+	box-shadow: 0 0 0 0.2ch var(--border-colour);
+	transition: 0.1s;
+	background: var(--accent-colour);
+	outline: none;
+}
+
+input[type="submit"]:hover {
+	background: var(--accent-colour-focus);
+	box-shadow: 0px 0px 0px 0.5ch var(--border-colour);
+}
+
+input {
+	accent-color: var(--accent-colour);
+}

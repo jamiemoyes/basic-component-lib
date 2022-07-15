@@ -1,0 +1,38 @@
+img {
+	width: 100%;
+	border-radius: 1ch;
+	height: 10rem;
+	object-fit: cover;
+}
+
+.content-card {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 1rem;
+	text-align: left;
+	cursor: pointer;
+	width: 20rem;
+	border-radius: 1ch;
+}
+
+.content-card:hover {
+	outline: solid 2px var(--accent-colour);
+	outline-offset: 0.4ch;
+}
+
+.content-card:hover>.enter-icon {
+	transform: translateX(0.5rem);
+}
+
+.content-card h1,
+.content-card h2 {
+	margin-bottom: 0.2rem;
+}
+
+.content-card h2 {
+	margin-top: 0.2rem;
+}
+
+.content-card p {
+	margin: 0.5rem 0;
+}

@@ -1,0 +1,5 @@
+div .container {
+	background-color: var(--container-background);
+	padding: 3rem;
+	border-radius: 1ch;
+}
